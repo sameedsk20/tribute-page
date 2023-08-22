@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.container{
+    padding: 10px 10%;
+}
+
+ /* HEADER  */
+
+.header{
+    background: url("images/snapquote.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 100%;
+    height: 90vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h1{
+    color:#fff ;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    transition: 0.3s;
+}
+nav h1:hover{
+    color: #c49558;
+    cursor: pointer;
+}
+
+  /* DETAILS  */
+.details{
+    background: url("images/main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 630vh;
+}
+.title{
+    justify-content: center;
+    text-align: center;
+}
+.title h1{
+    font-size: 60px;
+    color: #c49558;
+    font-weight: 600;
+    text-shadow: 0 0 5px #694919;
+}
+.title h2{
+    color: #975a0a;
+    text-shadow: 0 0 4px #da9b48;
+    font-size: 45px;
+}
+.subTitle{
+    font-size: 40px;
+    font-weight: 700;
+    color:#926932;
+    text-shadow: 0 0 4px #694919;
+}
+
+/* BIOGRAPHY  */
+.aboutLife{
+    padding: 15px 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: transparent; */
+}
+.aboutLife img{
+    width: 300px;
+    height: 100%;
+    border-radius: 6px;
+    margin: 0px 10px;
+}
+.content{
+    font-size: 19px;
+    color: #fff;
+    padding: 10px 10px;
+    text-shadow: 0 0 3px #000;
+    font-weight: 500;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    margin-left: 20px;
+    width: 300px;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: 0.5s ease;
+  }
+  .card:hover{
+    background: #9e9a9a;
+    transform: scale(1.05);
+    .cardContent h3{
+        color: #000;
+    }
+    border-color: #000;
+  }
+  .cardContent {
+    padding: 20px;
+  }
+  .cardContent h3 {
+    margin-top: 0;
+    font-weight: 900;
+    text-align: center;
+    font-size: 21px;
+    color: #c7821a;
+    text-shadow: 0 0 2px #292622;
+  }
+  .cardContent p{
+    margin-top: 10px;
+    padding-right: 10px;
+    font-weight: 400;
+  }
+  .cardContainer{
+    display: flex;
+    flex-direction: row;
+  }
+  .copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 19px;
+    color: #fff;
+}
+.socialIcons{
+    margin-top: 30px;
+}
+.socialIcons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: 1s ease-in-out;
+}
+.socialIcons a:hover{
+    color: #c4883a;
+    transform: rotate3d(0,0,1,360deg);
+}
+.reveal{
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.revealXR{
+    position: relative;
+    transform: translateX(-55px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.revealXR.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+  
+
